@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./icon/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>My Public IP Address</title>
+  </head>
+  <body>
+    <h1 class="header">MY Public IP ADDRESS:</h1>
+
+    <section class="user-details">
+      <div class="lat-long">
+        <p id="lat" class="info-d"><span class="info-title">Lat:</span></p>
+        <p id="long" class="info-d"><span class="info-title">Long:</span></p>
+      </div>
+
+      <div class="city-region">
+        <p id="city" class="info-d"><span class="info-title">City:</span></p>
+        <p id="region" class="info-d"><span class="info-title">Regin:</span></p>
+      </div>
+
+      <div class="org-host">
+        <p id="organization" class="info-d"><span class="info-title">Organization:</span></p>
+        <p id="hostname" class="info-d"><span class="info-title">Hostname:</span> User</p>
+      </div>
+    </section>
+
+    <section class="mapping" id="mapping">
+    </section>
+
+    <section class="time-zone-section">
+      <p id="time-zone">Time Zone:</p>
+      <p id="date-time">Date And Time:</p>
+      <p id="pincode">Pincode:</p>
+      <p id="message"></p>
+    </section>
+
+    <section class="post-office-details">
+      <div class="filter">
+        <span class="material-symbols-outlined"> search </span>
+        <input type="text" placeholder="Filter" id="filter-input"/>
+      </div>
+
+      <div class="no-value none">No Such Result Found.. try again</div>
+
+      <div class="post-offices">
+        <div class="post-info">
+            <p class="info"><span class="info-title">Name:</span></p>
+            <p class="info"><span class="info-title">Branch:</span></p>
+            <p class="info"><span class="info-title">Delivery Status:</span></p>
+            <p class="info"><span class="info-title">District:</span></p>
+            <p class="info-d"><span class="info-title">Division:</span></p>
+        </div>
+      </div>
+
+      <script src="./addressInfo.js"></script>
+    </section>
+  </body>
+</html>
